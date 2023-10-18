@@ -1,0 +1,3 @@
+python-decouple==3.8
+termcolor==2.3.0
+termcolor2==0.0.3
