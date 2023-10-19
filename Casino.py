@@ -1,9 +1,9 @@
 from random import randint
-from settings import MY_MONEY
+from decouple import config
 
 class CasinoGame:
     def __init__(self):
-        self.__my_money = MY_MONEY
+        self.__my_money = config('My_MONEY', cast=int)
 
     def play_game(self):
         while self.__my_money > 0:
